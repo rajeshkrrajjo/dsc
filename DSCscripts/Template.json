@@ -52,12 +52,6 @@
         "description": "Admin password"
       }
     },
-    "modulesUrl": {
-      "type": "string",
-      "metadata": {
-        "description": "URL for the DSC configuration module. NOTE: Can be a Github url(raw) to the zip file"
-      }
-    },
     "configurationFunction": {
       "type": "string",
      "defaultValue": "",
@@ -203,7 +197,6 @@
         "typeHandlerVersion": "2.19",
         "autoUpgradeMinorVersion": true,
         "settings": {
-          "ModulesUrl": "[parameters('modulesUrl')]",
           "ConfigurationFunction": "[parameters('configurationFunction')]",
           "Properties": {
             "MachineName": "[parameters('vmName')]"
