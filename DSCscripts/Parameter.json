@@ -3,10 +3,10 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "newStorageAccountName": {
-            "value": "GEN-UNIQUE"
+            "value": "strhgwtyw113"
         },
         "vmName": {
-            "value": "GEN-UNIQUE-8"
+            "value": "newvmtest"
         },
         "vmSize": {
             "value": "Standard_A2"
@@ -15,10 +15,10 @@
             "value": "2012-R2-Datacenter"
         },
         "adminUsername": {
-            "value": "GEN-UNIQUE"
+            "value": "demouser"
         },
         "adminPassword": {
-            "value": "GEN-PASSWORD"
+            "value": "Pa$$w0rd1234"
         }
     }
 }

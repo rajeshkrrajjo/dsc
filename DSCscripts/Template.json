@@ -52,9 +52,15 @@
         "description": "Admin password"
       }
     },
+    "modulesUrl": {
+      "type": "string",
+      "metadata": {
+        "description": "URL for the DSC configuration module. NOTE: Can be a Github url(raw) to the zip file"
+      }
+    },
     "configurationFunction": {
       "type": "string",
-     "defaultValue": "",
+      "defaultValue": "ContosoWebsite.ps1\\ContosoWebsite",
       "metadata": {
         "description": "DSC configuration function to call"
       }
@@ -197,6 +203,7 @@
         "typeHandlerVersion": "2.19",
         "autoUpgradeMinorVersion": true,
         "settings": {
+          "ModulesUrl": "[parameters('modulesUrl')]",
           "ConfigurationFunction": "[parameters('configurationFunction')]",
           "Properties": {
             "MachineName": "[parameters('vmName')]"

@@ -1,4 +1,3 @@
-Install-WindowsFeature -Name DSC-Service
 Configuration ContosoWebsite
 {
   param ($MachineName)
